@@ -94,9 +94,6 @@ class GraphiteProcessor(Plugin):
         return True
 
     def post_process(self, group, event, is_new, is_sample, **kwargs):
-        if is_sample:
-            return
-
         if not self.should_record(group, event):
             return
 
