@@ -20,7 +20,7 @@ class GraphiteConfigurationForm(forms.Form):
         'placeholder': 'graphite.local',
     }))
     port = forms.IntegerField(max_value=65535, widget=forms.TextInput(attr={
-        'placehold': '8125',
+        'placeholder': '8125',
     }))
     prefix = forms.CharField(max_length=64, widget=forms.TextInput(attrs={
         'placeholder': 'sentry',
