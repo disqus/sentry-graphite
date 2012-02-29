@@ -18,6 +18,7 @@ except ImportError:
 
 install_requires = [
     'sentry>=2.1.0',
+    'pystatsd',
 ]
 
 setup(
